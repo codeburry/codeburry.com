@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     line-height: 1;
+    box-sizing: border-box;
 }
 
 html, body {
@@ -45,6 +46,10 @@ header {
     box-shadow: 0 1px 20px rgba(0,0,0,.4);
 }
 
+header a {
+    color: white!important;
+}
+
 main header h1 {
     margin: 0 0 .7em;
     font-size: 42px;
@@ -60,4 +65,29 @@ main header p {
 
 main header > * + * {
     margin-top: .5em;
+}
+
+@media (max-width: 768px) {
+    header {
+        position: initial;
+        top: initial;
+        left: initial;
+        width: 100%;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    main header h1 {
+        font-size: 32px;
+    }
+
+    main header h2 {
+        font-size: 22px;
+    }
+
+    main header p {
+        font-size: 17px;
+    }
 }
